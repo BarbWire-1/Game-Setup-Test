@@ -30,7 +30,7 @@ class PlayerHandler {
         }
     }
 
-    updatePlayers() {
+    updatePlayers() { // called in frame
         // "physics"
         this.players.forEach(player => {
             
