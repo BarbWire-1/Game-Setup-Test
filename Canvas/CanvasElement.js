@@ -10,7 +10,7 @@ export class CanvasElement {
         this.fill = fill || "orange";
         this.timeFix = 1;
         
-        this.z_index = 0;
+        this._zIndex = 0;
     }
 
     update(timeFix) {
@@ -29,6 +29,6 @@ export class CanvasElement {
         console.log(controller.elements)
     }
     get zIndex() {
-        return this.z_indx;
+        return this._zIndex;
     }
 }

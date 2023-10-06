@@ -26,7 +26,6 @@ export class Player extends CanvasElement {
 
     moveRight() {
         this.vx += 0.5 * this.timeFix;
-        console.log(this.timeFix)
     }
 
     draw() {
