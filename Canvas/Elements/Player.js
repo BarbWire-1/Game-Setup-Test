@@ -2,7 +2,7 @@ import {CanvasElement} from '../CanvasElement.js'
 
 export class Player extends CanvasElement {
     constructor(canvas, options) {
-        super(canvas, options.x, options.y, options.fill, );
+        super(canvas, options.x, options.y, options.fill);
         this.width = 50;
         this.height = 50;
         this.vx = 0;

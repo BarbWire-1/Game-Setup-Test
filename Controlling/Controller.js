@@ -24,7 +24,7 @@ class Controller{
     
     
     reorderElements() {
-        this.elements.sort((a, b) => a.z_index - b.z_index);
+        this.elements.sort((a, b) => a._zIndex - b._zIndex);
         console.log(this.elements)
     }
     

@@ -24,7 +24,8 @@ export class CanvasElement {
     }
     
     set zIndex(newIndex) {
-    this.z_index = newIndex;
+        this._zIndex = newIndex;
+  console.log(this._zIndex)
         controller.reorderElements(); // Call the reorder function when zIndex is changed.
         console.log(controller.elements)
     }

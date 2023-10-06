@@ -105,8 +105,9 @@ const loop = function (currentTime) {
    
     // calc frame-diffs and adjust
     const elapsedTime = currentTime - config.lastFrameTime;
+    
     let timeFix = 1000 / elapsedTime / config.FPS || 1;
-
+    //console.log(timeFix)
    
     playerHandler.player = config.activePlayer;
     playerHandler.handlePlayerInput(); // Key events
@@ -129,9 +130,9 @@ requestAnimationFrame(loop);
 
 // setActivePlayer(0); //✅
 
-// player1.setZindex = 1;//✅
 
-players[ 0 ].zIndex = 1;
+players[ 0 ].zIndex = 1;// ✅
+
 
 
 // TODO add id/classes to els and a function for setting layer for individuals or bulk-setting
