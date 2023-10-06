@@ -1,6 +1,7 @@
 
 class PlayerHandler {
-    constructor(player, keyActions, players, gravity, accel, canvasWidth, canvasHeight) {
+    constructor (player, keyActions, players, gravity, accel, canvasWidth, canvasHeight) {
+        
         this.player = player;
         this.keyActions = keyActions;
         this.players = players;
@@ -31,17 +32,19 @@ class PlayerHandler {
     }
 
     updatePlayers() { // called in frame
-        // "physics"
+       
         this.players.forEach(player => {
-            
+            // "physics"
+            //TODO would be obsolete if switching to keyFrames
             player.x += player.vx;
-            player.x = Math.max(0, Math.min(this.canvasWidth - player.width, player.x));
             player.y += player.vy;
             player.vx *= this.accel;
             player.vy *= this.accel;
             player.vy += this.gravity;
             
-            //Boundaries
+            //Boundaries y
+            //TODO set this elsewhere?
+            player.x = Math.max(0, Math.min(this.canvasWidth - player.width, player.x));
             if (player.y > this.canvasHeight - player.height - 34) {
                 player.jumping = false;
                 player.y = this.canvasHeight - player.height - 34;

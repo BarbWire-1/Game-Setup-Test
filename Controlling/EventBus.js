@@ -1,3 +1,4 @@
+// currently used for keyListener
 class EventBus{
     constructor () {
         this.events = {};
@@ -6,7 +7,7 @@ class EventBus{
         if (!this.events[ event ]) {
             this.events[ event ] = [];
         }
-        console.log(event + " subscribed!")
+        //console.log(event + " subscribed!")
         this.events[ event ].push(callback);
     }
     unsubscribe(event, callback) {

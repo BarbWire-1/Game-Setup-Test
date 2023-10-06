@@ -1,5 +1,6 @@
 import {eventBus} from './EventBus.js'
 
+// emits key events to trigger associated actions in PlayerHandler
 class KeyListener {
     constructor (eventDispatcher) { 
         this.keys = {};

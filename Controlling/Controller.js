@@ -1,3 +1,4 @@
+// keeps an array of all (active) elements to draw
 class Controller{
     
     constructor () {
