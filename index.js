@@ -1,5 +1,5 @@
 /*
-This is just a testing for how I think a gamelogic could be set up.
+This is just testing ideas how I think a gamelogic could be set up.
 Not about a real game, but about logical structure.
 First approach... and I feel rather challenged!
 */
